@@ -1,0 +1,24 @@
+# Copy this file to terraform.tfvars and fill in your values
+# DO NOT commit terraform.tfvars to version control
+
+aws_region = "us-east-1"
+aws_access_key = "YOUR_AWS_ACCESS_KEY_ID"
+aws_secret_key = "YOUR_AWS_SECRET_ACCESS_KEY"
+
+project_name = "farmtech-mis"
+environment = "production"
+
+instance_type = "t3.medium"
+db_instance_class = "db.t3.micro"
+db_allocated_storage = 20
+
+db_name = "farm_app"
+db_username = "admin"
+db_password = "CHANGE_THIS_STRONG_PASSWORD"
+
+key_pair_name = "farmtech-key"
+
+allowed_cidr_blocks = ["0.0.0.0/0"]  # Restrict this in production
+app_port = 8000
+ssh_port = 22
+
