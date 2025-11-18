@@ -30,42 +30,45 @@
         main {
             flex: 1 0 auto;
         }
-        .navbar {
-            background-color: #26605f;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
+        .navbar.navbar-expand-lg {
+            background-color: #26605f !important;
+            position: fixed !important;
+            top: 0 !important;
+            width: 100% !important;
+            z-index: 1000 !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .navbar-brand {
-            font-size: 2.1rem;
-            font-weight: 800;
-            letter-spacing: 0.01em;
-        }
-        .nav-link {
+            font-size: 2.1rem !important;
+            font-weight: 800 !important;
+            letter-spacing: 0.01em !important;
             color: white !important;
-            padding: 1rem 1.5rem;
-            transition: background-color 0.3s;
+        }
+        .navbar .nav-link {
+            color: white !important;
+            padding: 1rem 1.5rem !important;
+            transition: background-color 0.3s !important;
         }
         
-        .nav-link:hover {
-            background-color: #3a7d7b;
+        .navbar .nav-link:hover {
+            background-color: #3a7d7b !important;
+            color: white !important;
         }
         
         .navbar-nav {
-            margin-left: auto;
+            margin-left: auto !important;
         }
         
         body {
-            padding-top: 60px;
+            padding-top: 60px !important;
         }
 
         .navbar-toggler {
-            border-color: rgba(255,255,255,0.5);
+            border-color: rgba(255,255,255,0.5) !important;
         }
 
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
         }
     </style>
     @stack('styles')
